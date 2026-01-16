@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Developments | Estate Nexus Developments</title>
+  <meta name="description" content="Browse developments by status, location, and property type." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Estate Nexus home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong class="brand-name" data-company-name></strong>
+          <span class="brand-tagline" data-company-tagline></span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true" class="burger"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="developments.html" aria-current="page">Developments</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="news.html">Insights</a>
+        <a class="btn btn-small" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="section">
+      <div class="container">
+        <div class="page-head">
+          <h1>Developments</h1>
+          <p class="lead">Filter by status, location, and property type. All content is editable in the data file.</p>
+        </div>
+
+        <div class="filters" role="region" aria-label="Project filters">
+          <div class="filter">
+            <label for="fStatus">Status</label>
+            <select id="fStatus" data-filter-status>
+              <option value="">All</option>
+              <option>Completed</option>
+              <option>Under construction</option>
+              <option>Planned</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="fLocation">Location</label>
+            <select id="fLocation" data-filter-location>
+              <option value="">All</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="fType">Type</label>
+            <select id="fType" data-filter-type>
+              <option value="">All</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="fSearch">Search</label>
+            <input id="fSearch" type="search" placeholder="Search by name or headline" data-filter-search />
+          </div>
+        </div>
+
+        <div class="grid grid-cards" data-project-grid aria-live="polite" aria-busy="false"></div>
+        <div class="empty" data-project-empty hidden>
+          <h2>No matching developments</h2>
+          <p>Adjust filters or clear search terms.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <strong data-company-name></strong>
+            <div class="muted" data-company-tagline></div>
+          </div>
+        </div>
+        <p class="muted">Default template. Replace content, imagery, and projects as needed.</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <div class="muted" data-company-address></div>
+        <div class="muted"><a href="#" data-company-email-link>email</a></div>
+        <div class="muted"><a href="#" data-company-phone-link>phone</a></div>
+      </div>
+      <div>
+        <strong>Links</strong>
+        <div class="muted"><a href="developments.html">Developments</a></div>
+        <div class="muted"><a href="services.html">Services</a></div>
+        <div class="muted"><a href="news.html">Insights</a></div>
+      </div>
+      <div>
+        <strong>Social</strong>
+        <div class="muted"><a href="#" data-social-linkedin>LinkedIn</a></div>
+        <div class="muted"><a href="#" data-social-instagram>Instagram</a></div>
+        <div class="muted"><a href="#" data-social-x>X</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="muted">Copyright <span data-year></span> <span data-company-name></span>. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Estate Nexus Developments</title>
+  <meta name="description" content="Contact Estate Nexus Developments for new opportunities and project enquiries." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="nav-wrap glass">
+        <a class="brand" href="index.html" aria-label="Estate Nexus home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text" data-bind="companyName">Estate Nexus</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary" data-nav>
+          <a class="nav-link" href="developments.html">Developments</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="news.html">Insights</a>
+          <a class="nav-link" href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-cta" href="developments.html">View projects</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="container">
+      <div class="page-head">
+        <h1>Contact</h1>
+        <p class="lead">Share your brief and we will respond within one working day. This form simulates submission and can be wired to email or CRM later.</p>
+      </div>
+
+      <div class="grid-2">
+        <section class="glass panel">
+          <h2 class="h3">Send an enquiry</h2>
+          <form class="form" data-form="contact">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+              <div class="field-hint" data-error-for="name" role="alert" aria-live="polite"></div>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <div class="field-hint" data-error-for="email" role="alert" aria-live="polite"></div>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              <div class="field-hint" data-error-for="phone" role="alert" aria-live="polite"></div>
+            </div>
+            <div class="form-row">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Select</option>
+                <option>New acquisition opportunity</option>
+                <option>Project enquiry</option>
+                <option>Planning and design</option>
+                <option>Partnership proposal</option>
+                <option>Press and media</option>
+              </select>
+              <div class="field-hint" data-error-for="topic" role="alert" aria-live="polite"></div>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+              <div class="field-hint" data-error-for="message" role="alert" aria-live="polite"></div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <div class="form-status" data-form-status aria-live="polite"></div>
+            </div>
+          </form>
+        </section>
+
+        <aside class="glass panel">
+          <h2 class="h3">Office</h2>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-label">Email</div>
+              <a class="contact-value" href="#" data-bind="companyEmail">hello@estatenexus.example</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Phone</div>
+              <a class="contact-value" href="#" data-bind="companyPhone">+44 (0)20 0000 0000</a>
+            </div>
+            <div class="contact-item">
+              <div class="contact-label">Address</div>
+              <div class="contact-value" data-bind="companyAddress">Marylebone, London, W1</div>
+            </div>
+          </div>
+
+          <div class="map-embed">
+            <div class="map-frame" role="img" aria-label="Map placeholder"></div>
+            <p class="muted small">Replace this with a Google Maps or Mapbox embed when ready.</p>
+          </div>
+
+          <div class="social-row" aria-label="Social links">
+            <a class="chip" href="#" data-bind="socialLinkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="chip" href="#" data-bind="socialInstagram" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="chip" href="#" data-bind="socialX" target="_blank" rel="noreferrer">X</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer glass">
+        <div>
+          <div class="footer-brand" data-bind="companyName">Estate Nexus Developments</div>
+          <div class="muted">Liquid glass template. Replace placeholder content in the data file.</div>
+        </div>
+        <div class="footer-links">
+          <a href="developments.html">Developments</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="news.html">Insights</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-meta">
+          <span class="muted">© <span data-bind="year"></span></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="muted">All rights reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
